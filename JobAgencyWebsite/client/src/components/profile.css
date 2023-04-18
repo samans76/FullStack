@@ -1,0 +1,53 @@
+* {
+  direction: rtl;
+}
+
+/* :root {
+  font-size: 10px;
+} */
+
+.profile {
+  font-size: 9px;
+  height: 4.5em;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: flex-start;
+}
+
+.avatar {
+  margin-left: 0.85em;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.avatar .profileAvatar {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  border: 1px solid rgb(0, 0, 0, 0.25);
+}
+
+.avatar .isOnlineCircle {
+  position: relative;
+  top: -1.4em;
+  right: 2.5em;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  /* background-color: green; */
+  border: 0.25em solid white;
+}
+
+.text .name {
+  font-size: 1.4em;
+}
+
+.text .isOnlineText {
+  font-size: 1.15em;
+  margin: 0.1em 0.2em 0em 0em;
+}

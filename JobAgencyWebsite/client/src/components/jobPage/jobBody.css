@@ -1,0 +1,69 @@
+.navTab {
+  font-size: 17px;
+}
+
+#myTab {
+  /* position: absolute; */
+  border-bottom: 2px solid lightgray;
+  margin-bottom: 20px;
+}
+
+.navButton {
+  position: relative;
+  bottom: -2px;
+  background-color: white;
+  color: darkgray;
+  padding: 10px 2px 15px 0px;
+  margin: 0px 10px 0px 10px;
+  border: 0;
+  border-bottom: 2px solid lightgray;
+}
+
+.navButton:hover {
+  color: black;
+}
+.navButton:focus {
+  color: black;
+  border-bottom: 2px solid #00b946;
+}
+.navButton.active {
+  color: black;
+  border-bottom: 2px solid #00b946;
+}
+
+.catalog i {
+  margin: 50px;
+  font-size: 80px;
+  color: black;
+}
+
+.jobBody {
+  width: 1050px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1400px) {
+  .jobBody {
+    width: 1050px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .jobBody {
+    width: 900px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .jobBody {
+    width: 740px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .jobBody {
+    width: 560px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .jobBody {
+    width: 460px;
+  }
+}

@@ -1,0 +1,49 @@
+#carouselExampleIndicators {
+  width: 1050px;
+  height: 650px;
+  margin-bottom: 10px;
+}
+
+.carousel-inner {
+  border-radius: 12px;
+}
+.cImage img {
+  width: 1050px;
+  height: 650px;
+}
+
+@media screen and (max-width: 1400px) {
+  #carouselExampleIndicators,
+  .cImage img {
+    width: 1050px;
+    height: 650px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #carouselExampleIndicators,
+  .cImage img {
+    width: 900px;
+    height: 550px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #carouselExampleIndicators,
+  .cImage img {
+    width: 740px;
+    height: 445px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #carouselExampleIndicators,
+  .cImage img {
+    width: 560px;
+    height: 330px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #carouselExampleIndicators,
+  .cImage img {
+    width: 460px;
+    height: 260px;
+  }
+}
