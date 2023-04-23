@@ -20,29 +20,9 @@ function JobPage() {
       return (
         <>
           <div className="jobHead" style={{ margin: "50px 0 30px 0" }}>
-            <JobHeader
-              id={job.id}
-              profileAvatar={job.profileAvatar}
-              name={job.name}
-              isOnline={job.isOnline}
-              jobName={job.jobName}
-              jobAvatars={job.jobAvatars}
-              city={job.city}
-              description={job.description}
-              catalog={job.catalog}
-            />
+            <JobHeader jobData={job} />
           </div>
-          <JobBody
-            id={job.id}
-            profileAvatar={job.profileAvatar}
-            name={job.name}
-            isOnline={job.isOnline}
-            jobName={job.jobName}
-            jobAvatars={job.jobAvatars}
-            city={job.city}
-            description={job.description}
-            catalog={job.catalog}
-          />
+          <JobBody jobData={job} />
         </>
       );
     }

@@ -19,16 +19,18 @@ class JobCards extends Component {
       for (const job of this.context.jobsData) {
         const card = (
           <JobCard
-            id={job.id}
+            jobData={job}
             key={job.id}
-            profileAvatar={job.profileAvatar}
-            name={job.name}
-            isOnline={job.isOnline}
-            jobName={job.jobName}
-            jobAvatars={job.jobAvatars}
-            city={job.city}
-            description={job.description}
-            catalog={job.catalog}
+            // id={job.id}
+            // key={job.id}
+            // profileAvatar={job.profileAvatar}
+            // name={job.name}
+            // isOnline={job.isOnline}
+            // jobName={job.jobName}
+            // jobAvatars={job.jobAvatars}
+            // city={job.city}
+            // description={job.description}
+            // catalog={job.catalog}
           />
         );
         cards.push(card);

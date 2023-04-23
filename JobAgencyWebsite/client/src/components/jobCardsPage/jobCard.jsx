@@ -4,13 +4,14 @@ import "./jobCard.css";
 import Profile from "../profile";
 
 function JobCard(props) {
+  console.log(props);
   const navigate = useNavigate();
 
   const descriptionLimited = () => {
-    if (props.description.length > 200) {
-      return props.description.slice(0, 196) + " ...";
+    if (props.jobData?.description.length > 200) {
+      return props.jobData?.description.slice(0, 196) + " ...";
     } else {
-      return props.description;
+      return props.jobData?.description;
     }
   };
 
@@ -18,28 +19,32 @@ function JobCard(props) {
     <div
       className="jobCard m-4 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12"
       onClick={() => {
-        navigate(`/jobPage/${props.id}`);
+        navigate(`/jobPage/${props.jobData?.id}`);
       }}
     >
       <div className="cardHead">
-        <img className="jobAvatar" src={props.jobAvatars[0]} alt="avatar" />
+        <img
+          className="jobAvatar"
+          src={props.jobData?.jobAvatars[0]}
+          alt="avatar"
+        />
         <div className="city">
           <div className="locationIcon">
             <i className="fa-solid fa-location-dot"></i>
           </div>
-          <div className="cityName">{props.city}</div>
+          <div className="cityName">{props.jobData?.city}</div>
         </div>
       </div>
 
       <Profile
         className="profile"
-        profileAvatar={props.profileAvatar}
-        name={props.name}
-        isOnline={props.isOnline}
+        profileAvatar={props.jobData?.profileAvatar}
+        name={props.jobData?.name}
+        isOnline={props.jobData?.isOnline}
       />
 
       <div className="cardBody">
-        <div className="jobName">{props.jobName}</div>
+        <div className="jobName">{props.jobData?.jobName}</div>
         <div className="description">{descriptionLimited()}</div>
       </div>
     </div>

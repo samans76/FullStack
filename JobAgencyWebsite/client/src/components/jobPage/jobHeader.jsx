@@ -8,7 +8,7 @@ function JobHeader(props) {
   const createButtons = () => {
     const buttons = [];
     // eslint-disable-next-line no-unused-vars
-    for (const [i, avatar] of props.jobAvatars.entries()) {
+    for (const [i, avatar] of props.jobData.jobAvatars.entries()) {
       let button = <></>;
       if (i === 0) {
         button = (
@@ -42,7 +42,7 @@ function JobHeader(props) {
   const createImages = () => {
     const images = [];
 
-    for (const [i, avatar] of props.jobAvatars.entries()) {
+    for (const [i, avatar] of props.jobData.jobAvatars.entries()) {
       let image = <></>;
       if (i === 0) {
         image = (
@@ -104,22 +104,12 @@ function JobHeader(props) {
 
       <Profile
         className="profile"
-        profileAvatar={props.profileAvatar}
-        name={props.name}
-        isOnline={props.isOnline}
+        profileAvatar={props.jobData.profileAvatar}
+        name={props.jobData.name}
+        isOnline={props.jobData.isOnline}
       />
     </div>
   );
 }
 
 export default JobHeader;
-
-// id
-// profileAvatar
-// name
-// isOnline
-// jobName
-// jobAvatars
-// city
-// description
-// catalog

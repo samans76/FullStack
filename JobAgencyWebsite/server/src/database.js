@@ -19,6 +19,7 @@ const jobsData = [
       "https://www.sample-videos.com/pdf/Sample-pdf-5mb.pdf",
       "https://www.sample-videos.com/pdf/Sample-pdf-5mb.pdf",
     ],
+    price: 700,
   },
   {
     id: 1,
@@ -40,6 +41,7 @@ const jobsData = [
       "https://www.sample-videos.com/pdf/Sample-pdf-5mb.pdf",
       "https://www.sample-videos.com/pdf/Sample-pdf-5mb.pdf",
     ],
+    price: 400,
   },
   {
     id: 2,
@@ -60,6 +62,7 @@ const jobsData = [
       "https://www.sample-videos.com/pdf/Sample-pdf-5mb.pdf",
       "https://www.sample-videos.com/pdf/Sample-pdf-5mb.pdf",
     ],
+    price: 1800,
   },
   {
     id: 3,
@@ -81,6 +84,7 @@ const jobsData = [
       "https://www.sample-videos.com/pdf/Sample-pdf-5mb.pdf",
       "https://www.sample-videos.com/pdf/Sample-pdf-5mb.pdf",
     ],
+    price: 800,
   },
   {
     id: 4,
@@ -102,6 +106,7 @@ const jobsData = [
       "https://www.sample-videos.com/pdf/Sample-pdf-5mb.pdf",
       "https://www.sample-videos.com/pdf/Sample-pdf-5mb.pdf",
     ],
+    price: 1000,
   },
   {
     id: 5,
@@ -121,6 +126,7 @@ const jobsData = [
       "https://www.sample-videos.com/pdf/Sample-pdf-5mb.pdf",
       "https://www.sample-videos.com/pdf/Sample-pdf-5mb.pdf",
     ],
+    price: 1200,
   },
 ];
 

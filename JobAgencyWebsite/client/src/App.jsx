@@ -13,7 +13,6 @@ class App extends Component {
   async componentDidMount() {
     const res = await axios.get("http://localhost:12426/jobs");
     this.setState({ jobsData: res.data });
-    console.log("App", this.state);
   }
 
   render() {

@@ -4,7 +4,7 @@ import "./jobBody.css";
 function JobBody(props) {
   const createCatalogs = () => {
     const catalogs = [];
-    for (const [i, catalogData] of props.catalog.entries()) {
+    for (const [i, catalogData] of props.jobData.catalog.entries()) {
       const catalog = (
         <a
           className="catalog"
@@ -61,7 +61,7 @@ function JobBody(props) {
             aria-labelledby="description-tab"
             tabIndex="0"
           >
-            {props.description}
+            {props.jobData.description}
           </div>
           <div
             className="contentTab tab-pane fade"
