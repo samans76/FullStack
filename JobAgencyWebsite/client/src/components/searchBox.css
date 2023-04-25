@@ -1,0 +1,62 @@
+.searchBox {
+  width: 100%;
+  max-width: 270px;
+  /* max-height: 585px; */
+  font-size: 15px;
+  font-weight: bold;
+  padding: 1.1em;
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  border-radius: 0.3em;
+  background-color: rgba(242, 246, 255, 0.2);
+}
+
+.title {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 0.8em;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.8em;
+}
+
+input,
+select {
+  width: 100%;
+  height: 3em;
+  border-radius: 0.3em;
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  margin-bottom: 0.8em;
+  padding-right: 0.4em;
+}
+
+.search,
+.sortBy,
+.job,
+.city {
+  padding-bottom: 0.7em;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+  margin-bottom: 1em;
+}
+
+.isOnline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.isOnline label {
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.isOnlineCheckbox {
+  width: 1.15em;
+  height: 1.15em;
+  padding: 0px;
+  margin: 0px;
+  margin-right: 1.2em;
+}

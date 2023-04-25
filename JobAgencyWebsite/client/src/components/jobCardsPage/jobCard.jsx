@@ -4,7 +4,6 @@ import "./jobCard.css";
 import Profile from "../profile";
 
 function JobCard(props) {
-  console.log(props);
   const navigate = useNavigate();
 
   const descriptionLimited = () => {
